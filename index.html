@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
+    <!-- block bg -->
         <section class="bg__header">
             <img src="./img/Background__header.png" alt="background header">
         </section>
@@ -20,7 +21,11 @@
                 <div class="nav__logo">
                     <a href="#"><img src="./img/Logo.png" alt=""></a>
                 </div>
+                <div class="nav__btn">
+                    <i class="fas fa-align-right"></i>
+                </div>
                 <ul class="nav__menu">
+                    <li class="nav__menu-close"><i class="fas fa-times"></i></li>
                     <li class="nav__menu-item">
                         <a href="#" class="nav__menu-link">Study</a>
                     </li>
@@ -342,5 +347,25 @@
         </div>
     </section>
 </div>
+
+<script>
+    const toggleMenu = document.querySelector(".nav__btn");
+    const closeMenu = document.querySelector(".nav__menu-close");
+    // const closeMenuandGo = document.querySelectorAll(".close__mobile");
+    const headerMenu = document.querySelector(".nav__menu");
+    const isOpen = "is-open";
+
+    toggleMenu.addEventListener("click", function(){
+        headerMenu.classList.add(isOpen)
+    })
+
+    closeMenu.addEventListener("click", function(){
+        headerMenu.classList.remove(isOpen)
+    })
+
+    // closeMenuandGo.addEventListener("click", function(){
+    //     headerMenu.classList.remove(isOpen)
+    // })
+</script>
 </body>
 </html>

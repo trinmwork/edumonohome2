@@ -98,6 +98,21 @@ a{
     box-shadow: 0px 5px 8px 0 rgb(103 151 255 / 11%), 13px -2px 18px 0 rgb(103 151 255 / 11%);
 }
 
+.btn .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__menu-close{
+    display: none;
+}
+.nav__btn{
+    font-size: var(--size--title-50);
+    color: var(--primery--color);
+    padding: 1rem;
+    display: none;
+}
+
 .btn--primery{
     color: var(--white--color);
     background-color: var(--primery--color);
@@ -122,12 +137,19 @@ a{
 
 /* bg header */
 .bg__header{
+    display: block;
     max-width: 100%;
     margin: 0 auto;
     position: absolute;
     top: 0;
     left: 0;
+    background-size: cover;
     z-index: -3;
+}
+
+.bg__header img{
+    display: block;
+    width: 100%;
 }
 
 .nav .container{
@@ -270,6 +292,7 @@ a{
     left: -39rem;
     top: -29.3rem;
     z-index: -5;
+    
 }
 
 .limit__main-bg2{
@@ -287,6 +310,18 @@ a{
     left: 50%;
     transform: translate(-50%,-50%);
     
+}
+
+.limit__main-boder{
+    width: 100%;
+}
+
+.limit__main-clip{
+    width: 90%;
+}
+
+.limit__main-btnPlay{
+    width: 20%;
 }
 
 .limit__main-media{
@@ -364,7 +399,9 @@ a{
 
 .apply__bg-color{
     position: absolute;
+    display: block;
     z-index: -2;
+    width: 100%;
 }
 
 .apply__bg-woman{
@@ -487,6 +524,10 @@ a{
     margin-top: 1rem;
 }
 
+.apply__form-bg{
+    display: block;
+}
+
 .apply__form-bg img{
     position: absolute;
     top: 50%;
@@ -533,8 +574,9 @@ a{
     margin-right: -4.5rem;
     width: 30rem;
 }
-/* block cmt */
 
+
+/* block cmt */
 .cmt{
     margin-top: 7rem;
 }
@@ -656,8 +698,10 @@ a{
 
 .about__right-input input{
     padding: 1.5rem;
+    
 }
 .about__right-input button{
+    
     width: 82rem;
     background-color: var(--primery--color);
     color: var(--white--color);
